@@ -1,53 +1,131 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>FANBOARD Metrics</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Zilla+Slab+Highlight" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  </head>
-  <body id="bootstrap-overrides">
-    <nav class="navbar navbar-inverse bg-inverse">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#user-menu">
+<head>
+  <meta charset="utf-8">
+  <title>FANBOARD Metrics</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Zilla+Slab+Highlight" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="Chart.bundle.js"></script>
+  <script src="utils.js"></script>
+  <style>
+    canvas {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+  </style>
+</head>
+
+<body id="bootstrap-overrides">
+  <nav class="navbar navbar-inverse bg-inverse">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#user-menu">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://fanboard.co/">
+        <a class="navbar-brand" href="http://fanboard.co/">
           	<img src="img/FB-logo-small.png" width="35" height="35" class="navImg" alt="FANBOARD Logo">
-          	
+
           </a>
-        </div>
+      </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="user-menu">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="user-menu">
         <ul class="nav navbar-nav">
-           
-          <li ><a href="contentManag.html" class="navButtons">Content Management</a></li>
-          <li ><a href="gameManag.html" class="navButtons">Game Management</a></li>
-          <li ><a href="metric.html" class="navButtons">Metrics</a></li>
-              
-        
-              
-              
-          
-            
+
+          <li><a href="contentManag.html" class="navButtons">Content Management</a></li>
+          <li><a href="gameManag.html" class="navButtons">Game Management</a></li>
+          <li><a href="metric.html" class="navButtons">Metrics</a></li>
+
         </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
 
-    <main class="container" id="metrics">
-      <p>Metrics page!</p>
+  <main class="container" id="metrics">
+    <div id='cssmenu'>
+      <ul>
+        <p id="sidebar-text"> Analytics </p>
+        <li class=' has-sub'><a onclick="status()" href='#'><span>STATUS</span></a>
+        </li>
+        <li class='has-sub'><a onclick="heat()" href='#'><span>HEATMAP</span></a>
+        </li>
+        <li class='has-sub'><a onclick="sales()" href='#'><span>SALES</span></a>
 
+        </li>
+      </ul>
+    </div>
+
+    <div class="flex-container2">
+
+      <div class="noshow" id="image">
+        <img src="https://s-media-cache-ak0.pinimg.com/736x/68/18/7c/68187c9c1ed9db213c2e73b405f61dd2--national-football-league-football-team.jpg" alt="">
+      </div>
+
+
+      <div class="noshow">
+        <div id="piechart"></div>
+      </div>
+
+
+      <div id="status" class="noshow">
+        <div id="container">
+          <canvas id="canvas"></canvas>
+        </div>
+        <button id="randomizeData">Randomize Data</button>
+        <button id="addDataset">Add Dataset</button>
+        <button id="removeDataset">Remove Dataset</button>
+        <button id="addData">Add Data</button>
+        <button id="removeData">Remove Data</button>
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="piechart.js"></script>
+  <script src="barchart.js"></script>
+  <script>
+    function heat() {
+      var x = document.getElementById('image');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+    }
+
+    function sales() {
+      var x = document.getElementById('piechart');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+    }
+
+    function status() {
+      var x = document.getElementById('status');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+    }
+  </script>
 </body>
-<script src="script.js"></script>
+
+
 </html>
