@@ -44,10 +44,10 @@ h1{
 }
 
 .flex-item {
-    background-color: grey;
-    flex-direction: column;
-    align-self: flex-start;
-    border: 2px solid #d1690c;
+  background-color: grey;
+  flex-direction: column;
+  align-self: flex-start;
+  border: 2px solid #d1690c;
 	margin: 5px;
 	width: 150px;
 	height: 200px;
@@ -264,4 +264,187 @@ h1{
 #logo-text {
 	position: relative;
     right: 110px;
+}
+
+.main-content-header {
+  float: right;
+  position: relative;
+  bottom: 20px;
+}
+
+.gameManag-div {
+  border: 1px solid black;
+  float: right;
+  height: 400px;
+  width: 585px;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #272827;
+  flex-wrap: wrap;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  bottom: 25px;
+  /*overflow: auto;*/
+}
+
+.gameManag1 {
+  
+  height: 220px;
+  width: 145px;
+  background-color: grey;
+  flex-direction: column;
+  align-self: flex-start;
+  border: 1px solid #d1690c;
+  margin: 5px 5px;
+  
+}
+
+.text-div {
+  background-color: #d1690c;
+  height: 20px;
+  width: 120px;
+  position: relative;
+  top: 40px;
+  left: 10px;
+}
+
+.text-div2 {
+  background-color: #d1690c;
+  height: 20px;
+  width: 120px;
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+
+.text-div3 {
+  background-color: #d1690c;
+  height: 20px;
+  width: 120px;
+  position: relative;
+  top: 60px;
+  left: 10px;
+}
+
+.text-div4 {
+  background-color: #d1690c;
+  height: 20px;
+  width: 120px;
+  position: relative;
+  top: 70px;
+  left: 10px;
+}
+
+.gameManag2 {
+    height: 220px;
+  width: 145px;
+  background-color: grey;
+  flex-direction: column;
+  align-self: flex-start;
+  border: 1px solid #d1690c;
+  margin: 5px 5px;
+  
+}
+
+.text1-div {
+  background-color: #d1690c;
+  height: 20px;
+  width: 120px;
+  position: relative;
+  top: 40px;
+  left: 10px;
+}
+
+.text1-div2 {
+  background-color: #d1690c;
+  height: 20px;
+  width: 120px;
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+
+.text1-div3 {
+  background-color: #d1690c;
+  height: 20px;
+  width: 120px;
+  position: relative;
+  top: 60px;
+  left: 10px;
+}
+
+.text1-div4 {
+  background-color: #d1690c;
+  height: 20px;
+  width: 120px;
+  position: relative;
+  top: 70px;
+  left: 10px;
+}
+
+
+.gameManag3 {
+  height: 380px;
+  width: 250px;
+  background-color: grey;
+  flex-direction: column;
+  align-self: flex-start;
+  border: 1px solid #d1690c;
+  margin: 5px 5px;
+  
+}
+
+.stadiumImg {
+  height: 380px;
+  width: 250px;
+}
+
+.gameManag4 {
+  height: 150px;
+  width: 300px;
+  background-color: grey;
+  flex-direction: column;
+  align-self: flex-start;
+  border: 1px solid #d1690c;
+  margin: 5px 5px;
+  position: relative;
+  bottom: 160px;
+}
+
+.input1 {
+  width: 285px;
+  margin: 5px;
+  margin-left: 7px;
+}
+
+.input2 {
+  width: 285px;
+  margin: 5px;
+  margin-left: 7px;
+}
+
+.input3 {
+  width: 140px;
+  margin: 5px;
+  margin-left: 7px
+}
+
+.input4 {
+  width: 140px;
+  
+  margin-left: 7px;
+  position: relative;
+    left: 145px;
+    bottom: 31px;
+}
+
+.btn.btn-outline-warning {
+  background-color: #D96C00;
+  width: 290px;
+  position: relative;
+  bottom: 25px;
+  left: 5px;
 }
