@@ -48,11 +48,101 @@ h1{
   flex-direction: column;
   align-self: flex-start;
   border: 2px solid #d1690c;
-	margin: 5px;
+	margin: 20px 5px;
 	width: 150px;
 	height: 200px;
 	align-self: center;
 
+}
+
+.content1 {
+  width: 145px;
+  height: 195px;
+}
+
+.content2 {
+  width: 145px;
+  height: 195px;
+}
+
+.content3 {
+  width: 145px;
+  height: 195px;
+}
+
+.content4 {
+  width: 145px;
+  height: 195px;
+}
+
+.content5 {
+  width: 145px;
+  height: 195px;
+}
+
+.content6 {
+  width: 145px;
+  height: 195px;
+}
+
+.content7 {
+  width: 145px;
+  height: 195px;
+}
+
+.content8 {
+  width: 145px;
+  height: 195px;
+}
+
+.content9 {
+  width: 145px;
+  height: 195px;
+}
+
+.content10 {
+  width: 145px;
+  height: 195px;
+}
+
+.content11 {
+  width: 145px;
+  height: 195px;
+}
+
+.content12 {
+  width: 145px;
+  height: 195px;
+}
+
+.content13 {
+  width: 145px;
+  height: 195px;
+}
+
+.content14 {
+  width: 145px;
+  height: 195px;
+}
+
+.content15 {
+  width: 145px;
+  height: 195px;
+}
+
+.content16 {
+  width: 145px;
+  height: 195px;
+}
+
+.content17 {
+  width: 145px;
+  height: 195px;
+}
+
+.content18 {
+  width: 145px;
+  height: 195px;
 }
 
 .search-input {
