@@ -43,6 +43,7 @@ h1 {
   align-items: center;
   justify-content: center;
   overflow: auto;
+  margin-bottom: 30px;
 }
 
 .flex-item {
@@ -405,7 +406,7 @@ h1 {
 .flex-container2 {
   display: -webkit-flex;
   display: flex;
-  width: 900px;
+  width: 600px;
   height: 600px;
   background-color: #272827;
   flex-wrap: wrap;
@@ -414,6 +415,8 @@ h1 {
   align-items: center;
   justify-content: center;
   overflow: auto;
+  position: relative;
+  top: 30px;
 }
 
 div#noshow {
@@ -601,4 +604,41 @@ div#noshow {
   position: relative;
   bottom: 25px;
   left: 5px;
+}
+
+.scroll-box {
+  width: 750px;
+  
+  /*display: -webkit-flex;
+  display: flex;*/
+  background-color: #272827;
+  /*flex-wrap: wrap;*/
+  float: right;
+  display: flex;
+  /*align-items: center;
+  justify-content: center;*/
+  overflow: auto;
+  margin-top: 20px;
+}
+
+.content19 {
+  width: 145px;
+  height: 195px;
+
+}
+
+.img-button {
+  margin-top: 10px;
+  margin-left: 25px;
+  background-color: #D1690C;
+  border-radius: 5px;
+  border: none;
+
+}
+
+.story-tag {
+  position: relative;
+  top: 640px;
+  right: 120px;
+  color: #D1690C;
 }
